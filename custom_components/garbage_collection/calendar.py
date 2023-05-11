@@ -116,8 +116,8 @@ class EntitiesCalendarData:
                 if garbage_collection.expire_after is None:
                     event = CalendarEvent(
                         summary=name,
-                        start=dt_util.as_local(start),
-                        end=dt_util.as_local(end),
+                        start=start,
+                        end=end,
                     )
                 else:
                     event = CalendarEvent(
