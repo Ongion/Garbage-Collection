@@ -127,7 +127,8 @@ class EntitiesCalendarData:
                         ),
                         end=dt_util.as_local(
                             datetime.combine(start, garbage_collection.expire_after)
-                        ),                    )
+                        ),
+                    )
                 events.append(event)
                 start = garbage_collection.get_next_date(
                     start + timedelta(days=1), True
