@@ -2,8 +2,8 @@
   "domain": "garbage_collection",
   "name": "Garbage Collection",
   "codeowners": [
-    "@bruxy70",
-    "@Ongion"
+    "@Ongion",
+    "@bruxy70"
   ],
   "config_flow": true,
   "dependencies": [],
