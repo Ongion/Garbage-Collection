@@ -2,9 +2,9 @@
 
 [![Buy me a coffee](https://img.shields.io/static/v1.svg?label=Buy%20me%20a%20coffee&message=🥨&color=black&logo=buy%20me%20a%20coffee&logoColor=white&labelColor=6f4e37)](https://www.buymeacoffee.com/3nXx0bJDP)
 
-## End of Support
+## Kinda Supported
 
-Home Assistant has introduced local calendars in 2022, in the 2023.1 release they added an option for different recurent events. With this, most of the functionality of this custom helper is supported natively. So I will end developing and supporting this helper in 2023.
+Upstream is no longer supported, but I still use this because the Local Calendar integration in Home Assistant does not work well with garbage pickup where the date changes if there was a holiday in the week. I'm maintaining patches on top of this, for my own purposes.
 
 ## Table of Contents
 
