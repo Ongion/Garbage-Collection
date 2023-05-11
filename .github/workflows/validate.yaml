@@ -28,7 +28,7 @@ jobs:
         run: isort --line-width 88 --trailing-comma -m 3 --profile black --check-only .
       - name: blackstuff
         run: black .
-      - name ShowOutput
+      - name: ShowOutput
         run: cat /home/runner/work/Garbage-Collection/Garbage-Collection/custom_components/garbage_collection/calendar.py
       - name: black
         run: black --check .
