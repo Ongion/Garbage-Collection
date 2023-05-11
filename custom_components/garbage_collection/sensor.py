@@ -19,6 +19,7 @@ from homeassistant.helpers import device_registry as dr
 from homeassistant.helpers.entity import DeviceInfo
 from homeassistant.helpers.entity_platform import AddEntitiesCallback
 from homeassistant.helpers.restore_state import RestoreEntity
+import homeassistant.util.dt as dt_util
 
 from . import const, helpers
 from .calendar import EntitiesCalendarData
@@ -115,7 +116,7 @@ class GarbageCollection(RestoreEntity):
                 exp is None
                 or datetime.strptime(exp, "%H:%M:%S").time() == time(0, 0, 0)
             )
-            else datetime.strptime(exp, "%H:%M:%S").time()
+            else dt_util.as_local(datetime.strptime(exp, "%H:%M:%S").time())
         )
         self._date_format = config.get(
             const.CONF_DATE_FORMAT, const.DEFAULT_DATE_FORMAT
