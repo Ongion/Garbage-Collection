@@ -3,12 +3,12 @@ from __future__ import annotations
 
 from datetime import datetime, timedelta
 
+import homeassistant.util.dt as dt_util
 from homeassistant.components.calendar import CalendarEntity, CalendarEvent
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import HomeAssistant
 from homeassistant.helpers.entity_platform import AddEntitiesCallback
 from homeassistant.util import Throttle
-import homeassistant.util.dt as dt_util
 
 from .const import CALENDAR_NAME, CALENDAR_PLATFORM, DOMAIN, SENSOR_PLATFORM
 
@@ -116,14 +116,18 @@ class EntitiesCalendarData:
                 if garbage_collection.expire_after is None:
                     event = CalendarEvent(
                         summary=name,
-                        start=dt_util.as_local(start),
-                        end=dt_util.as_local(end),
+                        start=start,
+                        end=end,
                     )
                 else:
                     event = CalendarEvent(
                         summary=name,
-                        start=dt_util.as_local(datetime.combine(start, datetime.min.time())),
-                        end=dt_util.as_local(datetime.combine(start, garbage_collection.expire_after)),
+                        start=dt_util.as_local(
+                            datetime.combine(start, datetime.min.time())
+                        ),
+                        end=dt_util.as_local(
+                            datetime.combine(start, garbage_collection.expire_after)
+                        ),
                     )
                 events.append(event)
                 start = garbage_collection.get_next_date(
