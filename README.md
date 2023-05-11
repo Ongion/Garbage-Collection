@@ -1,4 +1,4 @@
-[![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://github.com/hacs/integration) [![Garbage-Collection](https://img.shields.io/github/v/release/Ongion/Garbage-Collection.svg?1)](https://github.com/bruxy70/Garbage-Collection) ![Maintenance](https://img.shields.io/maintenance/yes/2023.svg)
+[![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://github.com/hacs/integration) [![Garbage-Collection](https://img.shields.io/github/v/release/Ongion/Garbage-Collection.svg?1)](https://github.com/Ongion/Garbage-Collection) ![Maintenance](https://img.shields.io/maintenance/yes/2023.svg)
 
 [![Buy me a coffee](https://img.shields.io/static/v1.svg?label=Buy%20me%20a%20coffee&message=🥨&color=black&logo=buy%20me%20a%20coffee&logoColor=white&labelColor=6f4e37)](https://www.buymeacoffee.com/3nXx0bJDP)
 
@@ -40,11 +40,11 @@ You can also configure seasonal calendars (e.g. for bio-waste collection), by co
 And you can `group` entities, which will merge multiple schedules into one sensor.
 
 These are some examples using this sensor. The Lovelace config examples are included below.
-<img src="https://github.com/bruxy70/Garbage-Collection/blob/master/images/picture-entity.png">
+<img src="https://github.com/Ongion/Garbage-Collection/blob/master/images/picture-entity.png">
 
-<img src="https://github.com/bruxy70/Garbage-Collection/blob/master/images/entities.png">
+<img src="https://github.com/Ongion/Garbage-Collection/blob/master/images/entities.png">
 
-<img src="https://github.com/bruxy70/Garbage-Collection/blob/master/images/sensor.png">
+<img src="https://github.com/Ongion/Garbage-Collection/blob/master/images/sensor.png">
 
 <img src="https://github.com/amaximus/garbage-collection-card/blob/master/garbage_collection_lovelace.jpg">
 
@@ -53,7 +53,7 @@ These are some examples using this sensor. The Lovelace config examples are incl
 ### MANUAL INSTALLATION
 
 1. Download the
-   [latest release](https://github.com/bruxy70/garbage_collection/releases/latest).
+   [latest release](https://github.com/Ongion/garbage_collection/releases/latest).
 2. Unpack the release and copy the `custom_components/garbage_collection` directory
    into the `custom_components` directory of your Home Assistant
    installation.
@@ -63,7 +63,7 @@ These are some examples using this sensor. The Lovelace config examples are incl
 ### INSTALLATION VIA Home Assistant Community Store (HACS)
 
 1. Ensure that [HACS](https://hacs.xyz/) is installed.
-2. Search for and install the "Garbage Collection" integration.
+2. Add it as a custom repository. Look up how to do this somewhere else, I'm lazy please don't be mean.
 3. Restart Home Assistant.
 4. Configure the `garbage_collection` helper.
 
