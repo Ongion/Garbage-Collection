@@ -40,11 +40,11 @@ You can also configure seasonal calendars (e.g. for bio-waste collection), by co
 And you can `group` entities, which will merge multiple schedules into one sensor.
 
 These are some examples using this sensor. The Lovelace config examples are included below.
-<img src="https://github.com/Ongion/Garbage-Collection/blob/master/images/picture-entity.png">
+<img src="https://github.com/bruxy70/Garbage-Collection/blob/master/images/picture-entity.png">
 
-<img src="https://github.com/Ongion/Garbage-Collection/blob/master/images/entities.png">
+<img src="https://github.com/bruxy70/Garbage-Collection/blob/master/images/entities.png">
 
-<img src="https://github.com/Ongion/Garbage-Collection/blob/master/images/sensor.png">
+<img src="https://github.com/bruxy70/Garbage-Collection/blob/master/images/sensor.png">
 
 <img src="https://github.com/amaximus/garbage-collection-card/blob/master/garbage_collection_lovelace.jpg">
 
